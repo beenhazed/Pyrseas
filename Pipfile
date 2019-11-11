@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylama = "*"
+tox = "*"
+yapf = "*"
+
+[packages]
+psycopg2 = ">=2.7"
+pgdbconn = ">=0.8.0"
+PyYAML = ">=3.13"
+
+[requires]
+python_version = "3.7"

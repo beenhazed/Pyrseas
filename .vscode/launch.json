@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name":"Python: Module (dbtoyaml.py)",
+            "type":"python",
+            "request":"launch",
+            "module":"pyrseas/dbtoyaml.py",
+            "args": [
+                "--config",
+                "C:/sourcecode/repos/fhdbsrc/HealthMDM/config.yaml",
+                "-H",
+                "localhost",
+                "-p",
+                "5432",
+                "-U",
+                "postgres",
+                "--multiple-files",
+                "HealthMDM"
+            ]
+        },
+        {
+            "name": "Python: Current File with args",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--config",
+                "C:/sourcecode/repos/fhdbsrc/HealthMDM/config.yaml",
+                "-H",
+                "localhost",
+                "-p",
+                "5432",
+                "-U",
+                "postgres",
+                "--multiple-files",
+                "HealthMDM"
+            ]
+        }
+    ]
+}

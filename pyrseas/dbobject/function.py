@@ -278,7 +278,7 @@ class Function(Proc):
         elif self.language == 'internal':
             src = "$$%s$$" % (newsrc or self.source)
         else:
-            src = "$_$%s$_$" % (newsrc or self.source)
+            src = "$function$%s$function$" % (newsrc or self.source)
         volat = leakproof = strict = secdef = cost = rows = config = ''
         if self.volatility != 'v':
             volat = ' ' + VOLATILITY_TYPES[self.volatility].upper()
